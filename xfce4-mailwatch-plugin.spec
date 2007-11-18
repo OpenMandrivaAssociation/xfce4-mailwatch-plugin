@@ -6,9 +6,9 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://spuriousinterrupt.org/projects/mailwatch
 Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
-BuildRequires:	xfce-panel-devel >= 4.4.1
-BuildRequires:	libxfcegui4-devel
-Requires:	xfce-panel >= 4.4.1
+BuildRequires:	xfce4-panel-devel >= 4.4.2
+BuildRequires:	libxfcegui4-devel  >= 4.4.2
+Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-mailwatch-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
