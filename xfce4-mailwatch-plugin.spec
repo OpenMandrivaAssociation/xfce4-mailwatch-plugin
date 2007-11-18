@@ -1,16 +1,15 @@
-%define oname xfce4-mailwatch-plugin
-
 Summary:	Mail Watcher plugin for the Xfce panel
-Name:		xfce-mailwatch-plugin
+Name:		xfce4-mailwatch-plugin
 Version:	1.0.1
-Release:	%mkrel 5
-License:	GPL
+Release:	%mkrel 6
+License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://spuriousinterrupt.org/projects/mailwatch
-Source0:	http://spuriousinterrupt.org/files/mailwatch/%{oname}-%{version}.tar.bz2
+Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce-panel-devel >= 4.4.1
 BuildRequires:	libxfcegui4-devel
 Requires:	xfce-panel >= 4.4.1
+Obsoletes:	xfce-mailwatch-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -18,7 +17,7 @@ Mailwatch is a plugin for the Xfce 4 panel. It is intended to replace the
 current (4.0, 4.2) mail checker plugin in Xfce 4.4.
 
 %prep
-%setup -qn %{oname}-%{version}
+%setup -q
 
 %build
 %configure2_5x \
@@ -30,7 +29,7 @@ current (4.0, 4.2) mail checker plugin in Xfce 4.4.
 rm -rf %{buildroot}
 %makeinstall_std
 
-%find_lang %{oname}
+%find_lang %{name}
 
 %post
 %{update_menus}
@@ -43,9 +42,9 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f %{oname}.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
-%doc AUTHORS COPYING ChangeLog README
+%doc AUTHORS ChangeLog README
 %{_libdir}/xfce4/panel-plugins/%{oname}
 %{_datadir}/xfce4/panel-plugins/*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
