@@ -45,7 +45,7 @@ rm -rf %{buildroot}
 %files -f %{name}.lang
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog README
-%{_libdir}/xfce4/panel-plugins/%{oname}
+%{_libdir}/xfce4/panel-plugins/%{name}
 %{_datadir}/xfce4/panel-plugins/*.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
