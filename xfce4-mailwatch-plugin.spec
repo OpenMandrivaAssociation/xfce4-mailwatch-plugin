@@ -13,8 +13,7 @@ Obsoletes:	xfce-mailwatch-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-Mailwatch is a plugin for the Xfce 4 panel. It is intended to replace the 
-current (4.0, 4.2) mail checker plugin in Xfce 4.4.
+Mailwatch is a mail watcher plugin for the Xfce 4 panel.
 
 %prep
 %setup -q
