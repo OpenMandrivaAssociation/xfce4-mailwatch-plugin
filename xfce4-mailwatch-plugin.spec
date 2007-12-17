@@ -10,7 +10,6 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel  >= 4.4.2
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-mailwatch-plugin
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 Mailwatch is a mail watcher plugin for the Xfce 4 panel.
