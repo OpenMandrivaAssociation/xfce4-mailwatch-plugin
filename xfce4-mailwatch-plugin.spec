@@ -31,12 +31,16 @@ rm -rf %{buildroot}
 %find_lang %{name}
 
 %post
+%if %mdkversion < 200900
 %{update_menus}
+%endif
 %clean_icon_cache hicolor
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
 %clean_icon_cache hicolor
+%endif
 
 %clean
 rm -rf %{buildroot}
