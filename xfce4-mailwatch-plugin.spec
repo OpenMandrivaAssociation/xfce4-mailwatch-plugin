@@ -1,13 +1,14 @@
 Summary:	Mail Watcher plugin for the Xfce panel
 Name:		xfce4-mailwatch-plugin
-Version:	1.0.1
-Release:	%mkrel 9
+Version:	1.1.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://spuriousinterrupt.org/projects/mailwatch
 Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libxfcegui4-devel  >= 4.4.2
+BuildRequires:	gnutls-devel
 Requires:	xfce4-panel >= 4.4.2
 Obsoletes:	xfce-mailwatch-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
