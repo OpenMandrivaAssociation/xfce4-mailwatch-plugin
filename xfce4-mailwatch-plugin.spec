@@ -1,7 +1,7 @@
 Summary:	Mail Watcher plugin for the Xfce panel
 Name:		xfce4-mailwatch-plugin
 Version:	1.1.0
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://spuriousinterrupt.org/projects/mailwatch
@@ -20,6 +20,8 @@ Mailwatch is a mail watcher plugin for the Xfce 4 panel.
 %setup -q
 
 %build
+%define Werror_cflags %nil
+
 %configure2_5x \
 	--disable-static \
 	--enable-ssl
