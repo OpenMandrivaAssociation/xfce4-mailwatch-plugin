@@ -9,7 +9,7 @@ Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
 Patch0:		xfce4-mailwatch-plugin-1.1.0-rosa-linkage.patch
 Patch1:		xfce4-mailwatch-plugin-1.1.0-rosa-gnutls3.patch
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
-BuildRequires:	pkgconfig(libxfce4ui-1.0)
+BuildRequires:	pkgconfig(libxfce4ui-1)
 BuildRequires:	pkgconfig(exo-1)
 BuildRequires:	gnutls-devel
 BuildRequires:	libgcrypt-devel
