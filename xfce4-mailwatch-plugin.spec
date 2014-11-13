@@ -6,8 +6,6 @@ License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://spuriousinterrupt.org/projects/mailwatch
 Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
-Patch0:		xfce4-mailwatch-plugin-1.1.0-rosa-linkage.patch
-Patch1:		xfce4-mailwatch-plugin-1.1.0-rosa-gnutls3.patch
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
 BuildRequires:	pkgconfig(libxfce4ui-1)
 BuildRequires:	pkgconfig(exo-1)
@@ -22,8 +20,6 @@ Mailwatch is a mail watcher plugin for the Xfce 4 panel.
 
 %prep
 %setup -q
-#patch0 -p1
-#patch1 -p1
 
 %build
 xdt-autogen
@@ -41,10 +37,7 @@ xdt-autogen
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog README
-%{_libdir}/xfce4/panel-plugins/%{name}
-%{_datadir}/xfce4/panel-plugins/*.desktop
+%{_libdir}/xfce4/panel/plugins/libmailwatch.so
+%{_datadir}/xfce4/panel/plugins/mailwatch.desktop
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_iconsdir}/hicolor/scalable/apps/*.svg
-%{_datadir}/xfce4/doc/C/*.html
-%{_datadir}/xfce4/doc/C/images/*.png
-
