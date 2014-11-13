@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   xfce4-mailwatch-plugin-1.1.0.tar.bz2: fdca7a62a694146fc5cbe48dbaf4db4c60da5510
+sources:
+  xfce4-mailwatch-plugin-1.2.0.tar.bz2: d0ab5e543211b951e01242efeb4ab3145db5c4c4
