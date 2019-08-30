@@ -22,7 +22,7 @@ Mailwatch is a mail watcher plugin for the Xfce 4 panel.
 %setup -q
 
 %build
-xdt-autogen
+%xdt_autogen
 %define Werror_cflags %nil
 
 %configure \
