@@ -10,8 +10,8 @@ BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
 BuildRequires:	pkgconfig(exo-2)
 BuildRequires:	gnutls-devel
-BuildRequires:	libgcrypt-devel
-# required for patch0
+BuildRequires:	pkgconfig(libgcrypt)
+
 BuildRequires:	xfce4-dev-tools
 Requires:	xfce4-panel
 
