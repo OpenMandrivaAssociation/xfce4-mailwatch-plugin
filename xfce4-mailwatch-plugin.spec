@@ -4,7 +4,7 @@ Version:	1.3.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-URL:		http://spuriousinterrupt.org/projects/mailwatch
+URL:		https://spuriousinterrupt.org/projects/mailwatch
 Source0:	http://spuriousinterrupt.org/files/mailwatch/%{name}-%{version}.tar.bz2
 BuildRequires:	pkgconfig(libxfce4panel-2.0)
 BuildRequires:	pkgconfig(libxfce4ui-2)
